@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sorveteria</title>
+        <link rel="stylesheet" type="text/css" href="estilo.css" />
+        <script type="text/javascript">
+            function validarForm(){
+                var usr = document.getElementById("txtUsuario");
+                var pwd = document.getElementById("txtSenha");
+
+                if (usr.value == ""){
+                    alert('O usuário não foi informado.');
+                    usr.focus();
+                }else{
+                    if (pwd.value == ""){
+                        alert('A senha não foi definida.');
+                        pwd.focus();
+                    }else{
+                        //enviar o formulário
+                        document.forms['login'].submit();
+                    }
+                }
+            }
+
+            function limparForm(){
+                document.getElementById("txtUsuario").value = "";
+                document.getElementById("txtSenha").value = "";
+            }
+
+
+            function definirEstilo(elem){
+                var e = document.getElementById(elem);
+                e.style.background = "#87CEEB";
+                e.style.color = "#FF000";
+            }
+
+            function removerEstilo(elem){
+                var e = document.getElementById(elem);
+                e.style.background = "#FFFFFF";
+                e.style.color = "#000000";
+            }            
+        </script>
+    </head>
+    <body>
+        <h1>Login</h1>
+        <form id="login" action="">
+            <label>
+                Usuário
+                <input id="txtUsuario" type="text" size="15" 
+                    onfocus="definirEstilo(this.id)" onblur="removerEstilo(this.id)" />
+            </label>
+        </br></br>
+            <label>
+                Senha
+                <input id="txtSenha" type="password" size="15"
+                onfocus="definirEstilo(this.id)" onblur="removerEstilo(this.id)" />
+            </label> 
+        </br></br>         
+            <input id="btnOk" type="button" value="Ok" onclick="validarForm()" />
+            <input id="btnLimpar" type="button" value="Limpar" onclick="limparForm()" />
+        </form>
+    </br></br>
+        <h1>Menu</h1>        
+        <ul>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="tipos_de_sorvete.html">Tipos de Sorvetes</a></li>
+            <li><a href="sabores.html">Sabores</a></li>
+            <li><a href="pedidos.html">Para Viagem</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </body>
+</html>
