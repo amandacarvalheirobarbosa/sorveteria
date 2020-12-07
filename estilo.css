@@ -1,0 +1,8 @@
+h1 {
+color: DodgerBlue;
+border-style: solid;
+border-color: red green blue yellow;
+border-radius: 5px;
+width: auto;
+font-family: 'Brush Script MT', cursive;
+}
