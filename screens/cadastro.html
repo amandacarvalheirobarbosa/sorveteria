@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <title>Cadastro</title>
-        <link rel="stylesheet" type="text/css" href="estilo.css" />
+        <link rel="stylesheet" type="text/css" href="css/estilo.css" />
         <script>
             function verificar() {
                 var nome = document.cadastro.txtNome.value
@@ -29,7 +30,7 @@
     <body>
         <h1>Cadastro</h1>
 
-        <form action="resultado.html" method="GET" name="cadastro" onsubmit="return verificar()">
+        <form action="screens/resultado.html" method="GET" name="cadastro" onsubmit="return verificar()">
             <label class="registerLabel">
                 Nome:
                 <input class="register" type="text" name="txtNome" size="50">
@@ -54,6 +55,6 @@
         </form>
         
     </br></br>
-        <a href="principal.html">Voltar</a>
+        <a href="screens/principal.html">Voltar</a>
     </body>
 </html>
