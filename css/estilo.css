@@ -1,8 +1,52 @@
-h1 {
-color: DodgerBlue;
-border-style: solid;
-border-color: red green blue yellow;
-border-radius: 5px;
-width: auto;
-font-family: 'Brush Script MT', cursive;
+.h1 {
+    font-family: 'Brush Script MT', cursive;
+    text-align: center;
+}
+
+.borderBody {
+    border-style: solid;
+    border-color: red green blue yellow;
+    border-radius: 10px;
+    width: auto;
+}
+
+.navbar {
+    background-color: DodgerBlue;
+    overflow: hidden;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.navbar a:hover {
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: DodgerBlue;
+    color: white;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: green;
+    border-radius: 10px;
+}
+
+.center-img {
+    display: flex;
+    justify-content: center;
 }

@@ -3,32 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <title>Cadastro</title>
-        <link rel="stylesheet" type="text/css" href="css/estilo.css" />
-        <script>
-            function verificar() {
-                var nome = document.cadastro.txtNome.value
-                var email = document.cadastro.txtEmail.value
-                var senha = document.cadastro.txtSenha.value
-                var telefone = document.cadastro.txtTelefone.value
-    
-                if (nome==null || nome=="") {
-                    alert("Digite um nome válido")
-                    return false
-                } else if (email==null || email==""){
-                    alert("Digite um email válido")
-                    return false
-                } else if (senha.length < 6) {
-                    alert("Digite uma senha com pelo menos 6 digitos")
-                    return false
-                }else if (telefone.length < 11) {
-                    alert("Digite um telefone válido")
-                    return false
-                }
-            }
-        </script>
+        <link rel="stylesheet" type="text/css" href="../css/estilo.css" />
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <script src="../js/bootstrap.js"></script>
+        <script type="text/javascript" src="../js/cadastro.js"></script>
     </head>
     <body>
-        <h1>Cadastro</h1>
+
+        <h1 class="h1">Cadastro</h1>
 
         <form action="screens/resultado.html" method="GET" name="cadastro" onsubmit="return verificar()">
             <label class="registerLabel">
@@ -55,6 +37,6 @@
         </form>
         
     </br></br>
-        <a href="screens/principal.html">Voltar</a>
+        <div class="col-12"><a href="../sorveteria/screens/index.html" class="button">Voltar</a></div>
     </body>
 </html>

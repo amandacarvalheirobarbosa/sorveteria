@@ -3,37 +3,60 @@
     <head>
         <meta charset="UTF-8">
         <title>Pedidos</title>
-        <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+        <link rel="stylesheet" type="text/css" href="../css/estilo.css" />
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <script src="../js/bootstrap.js"></script>
     </head>
     <body>
-        <h1>Pedidos</h1>
-        <form>
-            <label>Qual o pedido?</label>
-            </br></br>
-            <label for="casquinha">Casquinha:</label>
-            <input type="checkbox" id="casquinha" name="casquinha"></br>
+        <div class="navbar col-sm-12 col-xs-12">
+            <div class="col-sm-3 col-xs-3"><a href="../screens/tipos_de_sorvete.html">Tipos de Sorvetes</a></div>
+            <div class="col-sm-3 col-xs-3"><a href="../screens/sabores.html">Sabores</a></div>
+            <div class="col-sm-3 col-xs-3"><a href="../screens/pedidos.html">Pedidos</a></div>
+            <div class="col-sm-3 col-xs-3"><a href="../screens/sobre.html">Sobre</a></div>
+        </div></br>
 
-            <label for="picole">Picolé:</label>
-            <input type="checkbox" id="picole" name="picole"></br>
+        <div class="row">
+            <div class="col-sm-4 col-xs-4"></div>
+            <div class="col-sm-4 col-xs-4 borderBody">
+                <form class="">                
+                    <h1 class="h1">Qual o pedido?</h1>
+                    </br></br>
 
-            <label for="petitgateau">Petit Gateau:</label>
-            <input type="checkbox" id="petitgateau" name="petitgateau"></br>
+                    <div class="col-sm-12 col-xs-12" style="text-align: center;">
+                        <label for="casquinha" class="form-label">Casquinha:</label>
+                        <input type="checkbox" id="casquinha" name="casquinha"></br>
+                    </div>
+                    
+                    <div class="col-sm-12 col-xs-12" style="text-align: center;">
+                        <label for="picole" class="form-label">Picolé:</label>
+                        <input type="checkbox" id="picole" name="picole"></br>
+                    </div>
 
-            <label for="sundae">Sundae:</label>
-            <input type="checkbox" id="sundae" name="sundae"></br>
+                    <div class="col-sm-12 col-xs-12" style="text-align: center;">
+                        <label for="petitgateau" class="form-label">Petit Gateau:</label>
+                        <input type="checkbox" id="petitgateau" name="petitgateau"></br>
+                    </div>
 
-            <label for="milkshake">Milk Shake:</label>
-            <input type="checkbox" id="milkshake" name="milkshake"></br>
+                    <div class="col-sm-12 col-xs-12" style="text-align: center;">
+                        <label for="sundae" class="form-label">Sundae:</label>
+                        <input type="checkbox" id="sundae" name="sundae"></br>
+                    </div>
 
-            <label for="bolodesorvete">Bolo de Sorvete:</label>
-            <input type="checkbox" id="bolodesorvete" name="bolodesorvete"></br>
-        
-        </br></br>
-            <input type="submit" value="Finalizar">
+                    <div class="col-sm-12 col-xs-12" style="text-align: center;">
+                        <label for="milkshake" class="form-label">Milk Shake:</label>
+                        <input type="checkbox" id="milkshake" name="milkshake"></br>
+                    </div>
 
-        </form>
-        
-    </br></br>
-        <a href="screens/principal.html">Voltar</a>
+                    <div class="col-sm-12 col-xs-12" style="text-align: center;">
+                        <label for="bolodesorvete" class="form-label">Bolo de Sorvete:</label>
+                        <input type="checkbox" id="bolodesorvete" name="bolodesorvete"></br>
+                    </div>
+                
+                </br></br>
+                    <div style="text-align: center;"><input class="button" type="submit" value="Finalizar"></div></br>
+                </form>
+            </div>
+            <div class="col-sm-4 col-xs-4"></div>
+        </div>
     </body>
 </html>
